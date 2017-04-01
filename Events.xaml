@@ -5,19 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalendarPlug"
         mc:Ignorable="d"
-        Title="Events" Height="379.12" Width="300">
-    <Grid>
+        Title="Events" Height="327.386" Width="300">
+    <Grid Height="300" Margin="0,0,-0.4,0" VerticalAlignment="Top">
         <Label x:Name="year" Content="Rok: " HorizontalAlignment="Left" Margin="10,51.6,0,0" VerticalAlignment="Top" Width="73.531"/>
         <Label x:Name="day" Content="Dzień: " HorizontalAlignment="Right" Margin="0,51.6,10,0" VerticalAlignment="Top" Width="80.868"/>
         <Label x:Name="month" Content="Miesiąc: " Margin="88.531,51.6,95.868,0" VerticalAlignment="Top"/>
         <Label x:Name="l01" Content="Planujesz Dla: " Margin="104.8,10,95.868,0" VerticalAlignment="Top"/>
         <Label x:Name="l02" Content="Godzina:" HorizontalAlignment="Left" Margin="10,82.56,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="l03" Content="Zdarzenie:" HorizontalAlignment="Left" Margin="10,144.48,0,0" Height="27.747" VerticalAlignment="Top"/>
-        <TextBox x:Name="eventTB" Height="115.92" Margin="10,0,10,43.067" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
-        <Label x:Name="l04" Content="Dźwięk:&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,113.52,0,0" VerticalAlignment="Top" Height="25.96" Width="56.16"/>
-        <TextBox x:Name="musicNameTB" Height="25.96" Margin="71.16,113.52,75.24,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="Wybierz plik...&#xD;&#xA;" IsEnabled="False"/>
-        <Button x:Name="search" Content="..." HorizontalAlignment="Right" Margin="0,113.52,16.24,0" VerticalAlignment="Top" Width="41.733" Height="25.96"/>
-        <Button x:Name="addEventB" Content="Dodaj&#xD;&#xA;" Margin="104.8,0,113.8,10" VerticalAlignment="Bottom" Height="28.067"/>
+        <Label x:Name="l03" Content="Zdarzenie:" HorizontalAlignment="Left" Margin="10,118,0,0" Height="27" VerticalAlignment="Top"/>
+        <TextBox x:Name="eventTB" Height="116" Margin="10,0,9,43" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        <Button x:Name="addEventB" Content="Dodaj&#xD;&#xA;" Margin="105,0,113,10" VerticalAlignment="Bottom" Height="28" Click="addEventB_Click"/>
+        <ComboBox x:Name="hour" HorizontalAlignment="Left" Margin="89,83,0,0" VerticalAlignment="Top" Width="48"/>
+        <ComboBox x:Name="minute" HorizontalAlignment="Left" Margin="156,83,0,0" VerticalAlignment="Top" Width="48"/>
 
     </Grid>
 </Window>

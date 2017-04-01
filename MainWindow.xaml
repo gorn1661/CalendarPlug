@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="167.88" Width="187.021" WindowStyle="None">
     <Grid>
-        <Calendar x:Name="calPlug" FontWeight="Bold" FontStyle="Italic" FontFamily="Trebuchet MS" SelectedDatesChanged="Calendar_SelectedDatesChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="167*"/>
+        </Grid.ColumnDefinitions>
+        <Calendar x:Name="calPlug" FontWeight="Bold" FontStyle="Italic" FontFamily="Trebuchet MS" SelectedDatesChanged="Calendar_SelectedDatesChanged" Grid.ColumnSpan="3" Margin="0,0,-0.2,-0.4">
             <Calendar.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF79AFE5" Offset="0"/>
